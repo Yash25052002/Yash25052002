@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: antiquewhite;
+  }
+
+  .flex-container{
+    display:flex;
+}
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #8cced1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+
+  .table-info{
+    margin-left:300px;
+    margin-top:40px;
+    margin-right:30px;
+  }
+  
+  .card-style{
+    margin-left:10px;
+    margin-right:10px;
+    color:white;
+    font-size:medium;
+}
+
+.container{
+  margin-left: 300px;
+}
+
+  @media screen and (max-width: 1030px) {                /*For Responsive*/
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      font-size: large;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+
+    .flex-container{
+      display: block;
+    }
+
+    .card-grp{
+      text-align: center;
+      width: auto;
+      margin-right:0;
+    }
+
+    .card-grp1{
+      width:900px;
+      margin-left:35px;
+    }
+
+    .col-xs-1.container.card-grp {
+      margin-left: 0;
+      padding-left: 0;
+  }
+
+  .graph-div.flex-container {
+    margin-left: 150px;
+}
+
+  .container{
+  margin-left: 150px;
+}
+  .table-info{
+    margin-left: 0px;
+  }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .flex-container{
+      display: block;
+      margin-top:0;
+    }
+  }
+
+  /*Cards css*/
+
+.heading{
+    margin-bottom: 20px;
+}
+
+.h4-heading{
+    margin-left:20px;
+}
+  .card-grp{
+      margin-left:300px;
+      margin-top:40px;
+  }
+
+.progress-bar{
+  width: 70%;
+}
+
+  /*Graphs*/
+
+.graph-img{
+    height:400px;
+    width:600px;
+}
+
+.graph-div{
+    margin-left:300px;
+    margin-top:40px;
+}
+
+.pieimg{
+    height:300px;
+    width:500px;
+    margin-top:50px;
+    margin-left:30px;
+}
+
+.tb-heading{
+  background-color: white;
+  margin-bottom:0;
+}
+
+.delivered{
+  color:green;
+}
+
+.n-delivered{
+  color:red;
+}
